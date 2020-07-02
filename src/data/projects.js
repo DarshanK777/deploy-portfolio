@@ -80,7 +80,7 @@ export const data = [
 
     },{
         name: "Reva-Instagram-Clone",
-        description: "A instagram clone which allows to share images and chat with friends",
+        description: "A MERN stack based instagram clone which allows to share images and chat with friends",
         technologies: [
             'React.js',
             'Node.js',
