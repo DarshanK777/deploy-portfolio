@@ -10,8 +10,11 @@
         font-weight: 700;
         display: inline-block;
         background-color: transparent;
-        white-space: nowrap;
         color: inherit;
+
+        @include xl{
+            white-space: nowrap;
+        }
     }
 
     p{

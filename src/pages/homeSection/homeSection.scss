@@ -7,63 +7,129 @@ div.home-container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     
     @include lg{
-        padding: 0 100px ;
-        padding-bottom: 120px;
+        padding: 0 50px ;
+        padding-bottom: 100px;
+        padding-top: 20px;
+        flex-direction: row-reverse;
+
     }
 
     @include xxl{
         max-width: 1440px;
         margin: 0 auto;
+        padding-top: 20px;
     }
 
-    span{
-        margin-block-start: 0.72em;
-        margin-block-end: 0.72em;
-        font-size: 1.75rem;
-        font-weight: 300;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .image{
+        width: 40vw;
+        height: 60vw;
+        position: relative;
+        display: block;
+        margin-bottom: 10px;
+
+        @include xs{
+            display: none;
+        }
+
+        @include smx{
+            display: block;
+            width: 32vw;
+            height: 52vw;
+            margin-bottom: 10px;
+        }
 
         @include lg{
-            font-size: 2rem;
-            max-width: 700px;
+            max-width: 190px;
+            height: auto;
         }
 
         @include xl{
-            font-size: 2.5rem;
+            max-width: 250px;
         }
 
         @include xxl{
-            font-size: 2.5rem;
+            max-width: 280px;
+        }
 
+        &:before{
+            content: "";
+            border: 1px solid #CCCCCC;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: -15px;
+            right: -15px;
+            z-index: -5;
         }
     }
-
-    span#home__contact{
-        font-size: 1rem;
-        font-weight: 400;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-
-        @include lg{
-            font-size: 1.25rem;
-        }
+    
+    .text-holder{
+        height: 60%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
         
-        a{
-            -webkit-transition: all .2s ease-in-out;
-            transition: all .2s ease-in-out;
-            font-weight: 400;
-            text-decoration: none;
-            display: inline-block;
-            padding: 2px 3px;
-            text-decoration: none;
-            color: gray;
+        @include lg{
+            width: 50%;
+        }
 
-            &:hover{
-                color: #da4843;
-                cursor: pointer;
+        span{
+            margin-block-start: 0.72em;
+            margin-block-end: 0.72em;
+            font-size: 1.75rem;
+            font-weight: 300;
+    
+            @include lg{
+                font-size: 2rem;
+                max-width: 700px;
+            }
+    
+            @include xl{
+                font-size: 2.5rem;
+            }
+    
+            @include xxl{
+                font-size: 2.5rem;
+    
             }
         }
     
+        span#home__contact{
+            font-size: 1rem;
+            font-weight: 400;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+    
+            @include lg{
+                font-size: 1.25rem;
+            }
+            
+            a{
+                -webkit-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+                font-weight: 400;
+                text-decoration: none;
+                display: inline-block;
+                padding: 2px 3px;
+                text-decoration: none;
+                color: gray;
+    
+                &:hover{
+                    color: #da4843;
+                    cursor: pointer;
+                }
+            }
+        
+        }
     }
 }

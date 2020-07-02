@@ -1,8 +1,22 @@
+$xs: 410px;
+$height: 670px;
 $sm: 480px;
 $md: 550px;
 $lg: 768px;
 $xl: 1024px;
 $xxl: 1280px;
+
+@mixin xs {
+    @media (max-width: #{$sm} ) and ( max-height: #{$height} ) {
+        @content;
+    }
+}
+
+@mixin smx {
+    @media (min-width: #{$xs}) {
+        @content;
+    }
+}
 
 @mixin sm {
     @media (min-width: #{$sm}) {
