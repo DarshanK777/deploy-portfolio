@@ -14,7 +14,6 @@ div.home-container{
         padding-bottom: 100px;
         padding-top: 20px;
         flex-direction: row-reverse;
-
     }
 
     @include xxl{
@@ -27,15 +26,16 @@ div.home-container{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        position: relative;
+        overflow: hidden;
     }
 
-    .image{
+    .img-container{
         width: 40vw;
         height: 60vw;
         position: relative;
         display: block;
         margin-bottom: 10px;
+        visibility: hidden;
 
         @include xs{
             display: none;
@@ -60,17 +60,7 @@ div.home-container{
         @include xxl{
             max-width: 280px;
         }
-
-        &:before{
-            content: "";
-            border: 1px solid #CCCCCC;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            bottom: -15px;
-            right: -15px;
-            z-index: -5;
-        }
+        
     }
     
     .text-holder{
@@ -116,7 +106,7 @@ div.home-container{
             
             a{
                 -webkit-transition: all .2s ease-in-out;
-                transition: all .2s ease-in-out;
+                transition:all .5s ease;
                 font-weight: 400;
                 text-decoration: none;
                 display: inline-block;
@@ -131,5 +121,33 @@ div.home-container{
             }
         
         }
+    }
+}
+
+.img-container{
+    overflow: hidden;
+
+    
+    
+    &:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    &:before{
+        content: "";
+        border: 2px solid #CCCCCC;
+        position: absolute;
+        width: 100%;
+        height: 0%;
+        visibility: hidden;
+        bottom: -15px;
+        right: -15px;
+        z-index: -5;
     }
 }
