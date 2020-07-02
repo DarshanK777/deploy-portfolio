@@ -1,0 +1,41 @@
+@import '../../mixins';
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .skill_category{
+        width: 47%;
+        margin-right: 5px;
+        margin-bottom: 25px;
+
+        @include lg{
+            width: auto;
+        }
+
+        .label{
+            font-weight: 700;
+            color: #36363c;
+            text-transform: uppercase;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li{
+                display: list-item;
+                text-align: -webkit-match-parent;
+            }
+
+            .item{
+                margin: 3px 0;
+                font-size: .9rem;
+            }
+        }
+    }   
+}
+
+

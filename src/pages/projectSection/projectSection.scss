@@ -1,0 +1,56 @@
+@import '../../mixins';
+
+.project{
+    max-width: 600px;
+    margin-bottom: 50px;
+
+    .project__name{
+        margin-bottom: 10px;
+        transition: all .2s ease-in-out;
+        font-weight: 700;
+        display: inline-block;
+        background-color: transparent;
+        white-space: nowrap;
+        color: inherit;
+    }
+
+    p{
+        font-size: .9rem;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .project__used{
+
+        .used__item{
+            display: inline-block;
+            margin: 3px 3px 3px 0;
+            font-family: Inconsolata,monospace;
+            font-size: .75rem;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 3px;
+            color: #007bff;
+            border: 1px solid #007bff;
+            background: 0 0;
+
+            &:first-of-type{
+                margin-left: 0;
+            }
+        }
+
+        .ongoing{
+            display: inline-block;
+            margin: 3px 3px 3px 0;
+            font-family: Inconsolata,monospace;
+            font-size: .75rem;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 3px;
+            background-color: rgb(236, 167, 38);
+            color: #ffffff;
+            border: 1px solid #c7a303;
+            // background: 0 0;
+        }
+    }
+}

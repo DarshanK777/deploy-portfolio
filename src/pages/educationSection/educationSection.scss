@@ -1,0 +1,30 @@
+@import '../../mixins';
+
+.education-list{
+    margin-bottom:  100px;
+
+    .education{
+        margin-bottom: 20px;
+    }
+
+    .time-place{
+        display: block;
+
+        @include lg{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .education-institute{
+            font-weight: 700;
+        }
+
+        .education-time{
+            font-size: .8rem;
+        }
+    }
+
+    .education-marks{
+        font-size: .8rem;
+    }
+}
