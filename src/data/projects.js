@@ -82,7 +82,7 @@ export const data = [
             "Redux",
             "FireBase"
         ],
-        link: "https://e-com-live.herokuapp.com",
+        link: "https://github.com/DarshanK777/E-commerce-React",
         Ongoing : false
 
     },{
