@@ -7,6 +7,7 @@ export const data = [
             'PostgreSql',
             'NetBeans'
         ],
+        link: "https://github.com/DarshanK777/Quiz-Application",
         Ongoing : false
 
     },
@@ -20,6 +21,7 @@ export const data = [
             'MySql',
             'Html/Css'
         ],
+        link: "https://github.com/DarshanK777/ASAC",
         Ongoing : false
 
     },    
@@ -32,6 +34,7 @@ export const data = [
             'JavaScript',
             'MySql'
         ],
+        link: "https://github.com/DarshanK777/Campus-recruitment",
         Ongoing : false
 
     },
@@ -42,6 +45,7 @@ export const data = [
             'Python',
             'Raspberry Pi',
         ],
+        link :null,
         Ongoing : false
 
     },
@@ -55,6 +59,7 @@ export const data = [
             'JavaScript',
             'Html/Css'
         ],
+        link: "https://github.com/DarshanK777/Django-fullstack",
         Ongoing : false
 
     },
@@ -65,17 +70,19 @@ export const data = [
             'node.js',
             'Html/Css'
         ],
+        link: "https://github.com/DarshanK777/node-weather-website",
         Ongoing : false
         
     },
     {
         name: "Shopping Site",
-        description: "Shopping site based on React and FireBase",
+        description: "Shopping site based on React and FireBase.",
         technologies: [
             'React.js',
             "Redux",
             "FireBase"
         ],
+        link: "https://e-com-live.herokuapp.com",
         Ongoing : false
 
     },{
@@ -88,6 +95,7 @@ export const data = [
             'MongoDB',
             'Redux'
         ],
+        link:"https://github.com/DarshanK777/Reva-Node",
         Ongoing : true
 
     }

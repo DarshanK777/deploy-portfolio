@@ -6,7 +6,7 @@ const Header = () =>{
         <div className="header-container">
             <div className="resume">
                 <div className="cover"></div>
-                <a href="https://drive.google.com/uc?export=download&id=185pm8tjRA0apeuYvO7eOmtpO7oIj2PBB" >
+                <a href="https://drive.google.com/uc?export=download&id=1bCGDFAOiaK4DfpvnLS3ey357jIelGXN2" >
                     Resume
                 </a>
             </div>

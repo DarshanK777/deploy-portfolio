@@ -9,12 +9,12 @@ const BackgroundSection = () =>{
             </div>
             <div className="section__content">
                 <p>
-                    I am Web Developer looking for Job. I graduated doing B.Tech in Information Technology from Pillai's College of Engineering, New Panvel.
+                    I am Software Engineer/Developer looking for Job. I graduated doing B.Tech in Information Technology from Pillai's College of Engineering, New Panvel.
                 </p>
 
                 <p>
               {/* es-lint-disabled-next-line */}
-                    I like to code to make something on web functional and make it to do what it meant to do.(with pinch of salt🤞)
+                    I have created multiple Web Apps for last 2+ years. I have experience in Django/Flask/Node.js for Backend Development and React.js for Frontend Development.
                 </p>
             </div>
         </section>

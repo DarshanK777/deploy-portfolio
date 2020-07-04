@@ -16,7 +16,12 @@ const ProjectSection = () =>{
                     return(
                         <div className="project" key={index}>
                             <div className="project__name">
-                                {value.name}
+                                {
+                                    value.link ?
+                                    <a href={value.link}>{value.name}</a> :
+                                    value.name
+                                }
+                                
                             </div>
                             <p>
                             {value.description} 

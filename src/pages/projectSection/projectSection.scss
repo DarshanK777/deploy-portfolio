@@ -12,6 +12,11 @@
         background-color: transparent;
         color: inherit;
 
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
         @include xl{
             white-space: nowrap;
         }
