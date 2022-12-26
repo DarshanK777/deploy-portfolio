@@ -1,0 +1,59 @@
+@import '../mixins';
+
+section {
+    padding: 35px 35px;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.6s cubic-bezier(.694,0,.335,1) 0s;
+
+
+
+    @include lg{
+        padding: 50px;
+    }
+
+    @include xl{
+        display: flex;
+        justify-content: center;
+    }
+
+    .section__title{        
+        text-align: left;
+        width: auto;
+        color: #43da64;
+        //da4843
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+
+        @include xl{
+            text-align: right;
+            width: 200px;
+            margin-right: 50px;
+        }
+    }
+
+    .section__content{
+        padding-top: 30px;
+        padding-left: 30px;
+        font-weight: 300;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 650px;
+        
+        @include lg{
+            padding-left: 50px;
+        }
+        
+        p{
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        @include xl{
+            padding: 0;
+        }
+    
+    }
+}
