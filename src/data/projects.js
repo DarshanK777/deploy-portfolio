@@ -99,5 +99,30 @@ export const data = [
         Ongoing: false
 
     },
+    {
+        name: "React Netflix clone",
+        description: "Netflix clone created using React.js and Firebase",
+        technologies: [
+            'React.js',
+            "Firebase",
+            "Redux",
+        ],
+        link: "https://github.com/dk5761/react-netflix",
+        Ongoing: false
+
+    },
+    {
+        name: "NextJS medium clone",
+        description: "Medium clone, where we can create a blog and view the blog.",
+        technologies: [
+            'Next.js',
+            "TailwindCSS",
+            "Sanity CMS",
+            "React.js"
+        ],
+        link: "https://github.com/dk5761/nextjs-blog",
+        Ongoing: false
+
+    },
 
 ]
