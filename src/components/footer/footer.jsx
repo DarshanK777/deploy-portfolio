@@ -4,10 +4,10 @@ import './footer.scss'
 const Footer = () => {
 
     const imageUrls = {
-        'email': '/icons/email.svg',
-        'twitter': '/icons/twitter.svg',
-        'linkedin': '/icons/linkedin.svg',
-        'github': '/icons/github.svg'
+        'email': '/portfolio/icons/email.svg',
+        'twitter': '/portfolio/icons/twitter.svg',
+        'linkedin': '/portfolio/icons/linkedin.svg',
+        'github': '/portfolio/icons/github.svg'
     }
 
 

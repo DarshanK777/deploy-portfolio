@@ -27,7 +27,7 @@ export const data = [
     },
     {
         name: "Campus Recruitment",
-        description: "A campus recruitment system using Php and bootstrap which act as campus system for the college",
+        description: "A campus recruitment system using Php and bootstrap which act as campus system for the college.",
         technologies: [
             'PhP',
             'Html/Css',
