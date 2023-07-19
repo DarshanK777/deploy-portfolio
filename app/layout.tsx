@@ -45,7 +45,7 @@ export default function RootLayout({
     >
       <body className={inter.className}>
         <Container>
-          <main className="flex max-h-screen  flex-col md:flex-row items-start justify-start md:px-8 lg:px-24 pt-20 h-full">
+          <main className="flex max-h-screen  flex-col md:flex-row md:items-start justify-start md:px-8 lg:px-24 pt-20 pb-20 md:pb-10 h-full">
             <Sidebar />
             {children}
           </main>

@@ -15,7 +15,7 @@ type Props = {
 const Connect = ({ iconUrl, url, labelText, alt }: Props) => {
   return (
     <div
-      className="max-w-[200px] border border-[#cbcbcb] bg-black rounded-md
+      className="max-w-[160px] border border-[#cbcbcb] bg-black rounded-md
       flex flex-row justify-around py-2 px-4 mr-2 mb-2
       items-center cursor-pointer
       "
@@ -26,7 +26,10 @@ const Connect = ({ iconUrl, url, labelText, alt }: Props) => {
         alt={alt}
       />
       {url.includes("mailto") ? (
-        <a href={url}> Click to connect</a>
+        <a href={url} className="font-medium text-sm">
+          {" "}
+          Click to connect
+        </a>
       ) : (
         <Link href={url}>{labelText ?? "Click to connect!"}</Link>
       )}
