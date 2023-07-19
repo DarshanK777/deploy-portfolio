@@ -25,7 +25,7 @@ export default function Sidebar({}: Props) {
   let pathname = usePathname() || "/";
 
   return (
-    <aside className="px-8 py-4 md:px-2 md:py-0 md:w-[150px]">
+    <aside className="px-4 py-4 md:px-2 md:py-0 md:w-[150px]">
       <LayoutGroup>
         <div className="flex flex-row md:flex-col ">
           {Object.entries(navItems).map(([path, { name }]) => {

@@ -7,7 +7,7 @@ type Props = {};
 
 const Page = (props: Props) => {
   return (
-    <section className="w-full p-2 px-8 flex flex-col h-full">
+    <section className="w-full p-4 px-6 flex flex-col h-full">
       <h1 className="font-bold text-xl mb-6">Experience</h1>
       <div className="overflow-y-auto h-full flex flex-col items-start px-2 ">
         {experience.map((item: Experience) => {
@@ -18,7 +18,7 @@ const Page = (props: Props) => {
               <div className="flex flex-row mb-2">
                 <Image
                   src={item.image}
-                  className="rounded-xl overflow-hidden border w-12 h-12 border-[#afafaf]/20 mr-4"
+                  className="rounded-xl overflow-hidden border w-12 h-12 border-[#afafaf]/20 mr-4 object-cover"
                   alt={item.name}
                 />
                 <div>
