@@ -7,10 +7,10 @@ import { flutter, framer, react, redux, tailwind } from "@/utils/image";
 
 export default function Home() {
   return (
-    <section className="w-full p-2 px-8">
+    <section className="w-full p-2 px-8 overflow-y-auto ">
       <Image
         src={profile2}
-        className="w-24 h-38 rounded-lg mb-8"
+        className="w-28 h-42 rounded-lg  m-auto md:m-0 mb-8 md:mb-8"
         alt="profile"
       />
 
