@@ -14,7 +14,7 @@ const Page = (props: Props) => {
           const desc = item.description.split("/n");
 
           return (
-            <div className="flex flex-col my-2 w-full mb-4">
+            <div className="flex flex-col my-2 w-full mb-4" key={item.name}>
               <div className="flex flex-row mb-2">
                 <Image
                   src={item.image}
@@ -34,8 +34,8 @@ const Page = (props: Props) => {
               </div>
 
               <ul className="text-sm w-full font-light list-disc text-white border border-[#cbcbcb]/[.3]  rounded-md px-6 py-2 mt-1">
-                {desc.map((x) => {
-                  return <li>{x}</li>;
+                {desc.map((x, idx) => {
+                  return <li key={idx}>{x}</li>;
                 })}
               </ul>
             </div>

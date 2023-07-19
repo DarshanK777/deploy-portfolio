@@ -13,7 +13,7 @@ const Page = (props: Props) => {
       <h1 className="font-bold text-xl mb-6">Projects</h1>
       <div className="overflow-y-auto h-full flex flex-col md:grid md:grid-cols-2 md:gap-2 items-start px-2 ">
         {projects.map((item: Project) => {
-          return <Card item={item} />;
+          return <Card item={item} key={item.name} />;
         })}
       </div>
     </section>
