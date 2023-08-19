@@ -2,7 +2,7 @@ import github from "@/public/images/icons/github.png";
 import linkedin from "@/public/images/icons/linkedin.png";
 import twitter from "@/public/images/icons/twitter.png";
 import gmail from "@/public/images/icons/gmail.png";
-import { medium, videoChat, ytClone } from "./image";
+import { medium, videoChat, ytClone, admin, store } from "./image";
 import { Experience, Project } from "@/types/app";
 import youth from "@/public/images/company/youth.jpg";
 import cybertech from "@/public/images/company/cybertech.jpg";
@@ -36,6 +36,58 @@ export const connectMap = [
 ];
 
 export const projects: Project[] = [
+  {
+    name: "Ecommerce Store",
+    description:
+      "The E-commerce Store made using Next.js, is dependent on the Admin Dashboard Project mentioned previously. It is hosted on vercel, checkout using stripe.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Stripe",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind Css",
+        color: "green-text-gradient",
+      },
+    ],
+    image: store,
+    source_code_link: "https://github.com/dk5761/nextjs-ecomm-store",
+    live_link: "https://nextjs-ecomm-store-rosy.vercel.app/",
+  },
+  {
+    name: "Admin Dashboard for Ecommerce",
+    description:
+      "Admin E-commerce app using Next js, Tailwind CSS and Clerk for authentication. Using Next.js for backend too using the API in the App Router.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Shadcn/UI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PlanetScale/MySql",
+        color: "green-text-gradient",
+      },
+    ],
+    image: admin,
+    source_code_link: "https://github.com/dk5761/nextjs-admin-dashboard",
+    live_link: "https://nextjs-admin-dashboard-seven.vercel.app/",
+  },
   {
     name: "Youtube Clone",
     description:

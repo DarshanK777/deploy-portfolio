@@ -11,12 +11,12 @@ interface Props {
 const Card = ({ item }: Props) => {
   return (
     <div
-      className="p-4 flex flex-col justify-center sm:w-[100%]  md:w-[100%] border rounded-lg border-[#afafaf]/40 mb-2"
+      className="p-4 flex flex-col justify-center sm:w-[100%]  md:w-[100%] border rounded-lg border-[#afafaf]/40 mb-2 h-full"
       key={item.name}
     >
       <Image
         src={item.image}
-        className="rounded-lg overflow-hidden border  border-[#afafaf]/20 mb-2"
+        className="rounded-lg overflow-hidden border  border-[#afafaf]/20 mb-2 w-full"
         alt={item.name}
       />
       <h2 className="font-bold text-lg mb-2">{item.name}</h2>
